@@ -5,6 +5,15 @@
 const person = {
   name: "Oguzhan",
   age: 23,
+  hobbies: ["Sports", "Cooking"],
 };
 
-console.log(person);
+let favoriteActivities: string[];
+favoriteActivities = ["Sports"];
+
+console.log(person.name);
+
+for (const hobby of person.hobbies) {
+  console.log(hobby.toUpperCase());
+  //console.log(hobby.map()); !!! ERROR !!!
+}
